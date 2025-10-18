@@ -1,0 +1,19 @@
+.search-container{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid #d96e0f   ;
+    border-radius: 15px;
+    padding-left: 7px;
+}
+.search-input{
+    padding: 6px;
+    border: none;
+    outline: none;
+    background-color: #f8f8f6;
+}
+.search-icon{
+    width: 16px;
+    height: 16px;
+    color: #9c9894;
+}
