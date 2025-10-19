@@ -9,7 +9,28 @@
 
 .banner {
     width: 70%;
-    height: 500px; 
+    height: 500px;
     object-fit: cover;
-    border-radius: 20px; /* Adiciona um leve arredondamento nas bordas */
+    border-radius: 20px;
+}
+
+.section-popular-recipes {
+    margin: 40px 20px 20px 20px;
+    padding-bottom: 70px;
+}
+
+.title-section {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 70px 50px 0px 50px;
+    color: #633b1e;
+    border-bottom: 0.5px solid #eb7f13;
+
+}
+
+.container-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 35px;
 }
