@@ -3,19 +3,25 @@
     justify-content: space-between;
     align-items: center;
     gap: 10px;
-    padding: 20px;
+    padding: 25px;
     background-color: #f8f8f6;
     color: #eb7f13;
     border-bottom: 0.5px solid #eb7f13;
 }
 .header h2{
     margin: 0;
-    color: #211912;
+    color: #633b1e;
 }
 .header-logo{
     display: flex;
     align-items: center;
     gap: 10px;
+}
+.header-title{
+    font-size: 22px;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    color: #633b1e;
 }
 .header-itens{
     display: flex;
@@ -29,12 +35,13 @@
     padding-left: 30px;
 }
 .header-nav a{
+    font-family: "Abel", sans-serif;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 18px;
     color: #666561;
 }
 .header-bookmark-icon{
-    color: #211912;
+    color: #633b1e;
     cursor: pointer;
 }
 .header-user{
@@ -43,7 +50,7 @@
     gap: 10px;
 }
 .header-user-icon{
-    color: #211912;
+    color: #633b1e;
     width: 28px;
     height: 28px;
     cursor: pointer;
