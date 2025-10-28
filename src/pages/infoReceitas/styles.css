@@ -1,0 +1,93 @@
+/* Fundo da modal (overlay) */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Caixa da modal */
+.modal-content{
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  padding: 24px;
+  max-width: 900px;
+  width: 90%;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  position: relative;
+  backdrop-filter: blur(12px);
+  animation: popUp 0.25s ease;
+}
+
+/* Imagem da receita */
+.modal-image {
+  width: 98%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+/* Título e texto */
+.modal-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #633b1e;
+  margin-bottom: 8px;
+}
+
+/* Animações */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes popUp {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Informações da receita */
+.modal-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-info-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ingredients-section,
+.instructions-section {
+  flex: 1;
+  min-width: 0;
+}
+
+h3 {
+  font-size: 20px;
+  color: #633b1e;
+  margin-bottom: 12px;
+}
+
+/* Responsivo para telas menores */
+@media (max-width: 768px) {
+  .modal-info-container {
+    flex-direction: column;
+  }
+}

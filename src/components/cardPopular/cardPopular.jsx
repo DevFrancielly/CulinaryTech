@@ -1,8 +1,8 @@
 import "./styles.css";
 
-function RecipeCard({ image, title, description}) {
+function RecipeCard({ image, title, description, onClick}) {
   return (
-    <div className="container-card-receitas-populares">
+    <div className="container-card-receitas-populares" onClick={onClick}>
       <img src={image} alt={title} className="img-card" />
       
       <div className="container-receitas-populares">
